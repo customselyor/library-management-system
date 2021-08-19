@@ -25,6 +25,8 @@
         "@fortawesome/fontawesome-free": "^5.15.3",
         "admin-lte": "3.0",
         "alpinejs": "^2.8.2",
+        "bootstrap-switch": "^3.4.0",
+        "inputmask": "^5.0.5",
         "select2": "^4.0.13"
     }
 }

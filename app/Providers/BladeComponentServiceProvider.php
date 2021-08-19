@@ -16,6 +16,7 @@ class BladeComponentServiceProvider extends ServiceProvider
     {
         Blade::component('layouts.master', 'admin-layout');
         Blade::component('layouts.app', 'app-layout');
+        Blade::component('layouts.auth', 'auth-layout');
     }
 
     /**

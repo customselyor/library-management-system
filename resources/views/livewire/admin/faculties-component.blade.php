@@ -32,7 +32,7 @@
                                 {{ __('Faculties') }}
                             </span>
                             <div class="float-right">
-                                <a class="btn btn-success" href="#"> {{ __('Create') }}</a>
+                                {{--<a class="btn btn-success" href="#"> {{ __('Create') }}</a>--}}
                             </div>
                         </div>
                     </div>
@@ -46,9 +46,9 @@
                             <table class="table table-bordered">
                                 <tr>
                                     <th>No</th>
-                                    <th>Name</th>
-                                    <th>abbreviation</th>
-                                    <th width="280px">Action</th>
+                                    <th>{{ __('Name') }}</th>
+                                    <th>{{ __('Abbreviation') }}</th>
+                                    <th width="280px">{{ __('Action') }}</th>
                                 </tr>
                                 @foreach ($data as $key => $user)
                                     <tr>

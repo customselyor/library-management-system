@@ -1,7 +1,792 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f2d057e-8d79-4177-a928-ced12c2910de" name="Default" comment="" />
+    <list default="true" id="6f2d057e-8d79-4177-a928-ced12c2910de" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Exports/BooksExport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BookInventarController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BookInventarListController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BookLanguageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BookTextController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BookTextTypeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BookTypeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/DirectionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/GenderController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserProfileController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserTypeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Admin/BooksComponent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Admin/QrcodeComponent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Book.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/BookInventar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/BookInventarList.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/BookLanguage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/BookText.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/BookTextType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/BookType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Direction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Gender.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/UserProfile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/UserType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/CHANGELOG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/INSTALL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/VERSION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/bindings/tcpdf/qrcode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_10.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_11.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_12.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_13.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_14.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_15.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_16.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_17.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_18.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_19.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_20.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_21.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_22.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_23.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_24.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_25.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_26.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_27.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_28.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_29.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_30.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_31.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_32.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_33.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_34.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_34.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_35.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_35.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_36.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_37.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_37.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_38.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_39.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_39.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_40.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_8.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_9.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/frame_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_101_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_105_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_109_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_113_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_117_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_121_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_125_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_129_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_133_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_137_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_141_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_145_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_149_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_153_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_157_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_161_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_165_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_169_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_173_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_177_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_21_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_25_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_29_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_33_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_37_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_41_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_45_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_49_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_53_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_57_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_61_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_65_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_69_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_73_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_77_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_81_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_85_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_89_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_93_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_0/mask_97_0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_101_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_105_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_109_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_113_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_117_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_121_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_125_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_129_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_133_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_137_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_141_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_145_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_149_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_153_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_157_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_161_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_165_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_169_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_173_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_177_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_21_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_25_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_29_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_33_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_37_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_41_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_45_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_49_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_53_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_57_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_61_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_65_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_69_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_73_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_77_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_81_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_85_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_89_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_93_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_1/mask_97_1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_101_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_105_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_109_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_113_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_117_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_121_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_125_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_129_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_133_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_137_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_141_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_145_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_149_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_153_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_157_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_161_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_165_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_169_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_173_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_177_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_21_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_25_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_29_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_33_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_37_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_41_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_45_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_49_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_53_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_57_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_61_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_65_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_69_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_73_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_77_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_81_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_85_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_89_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_93_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_2/mask_97_2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_101_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_105_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_109_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_113_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_117_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_121_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_125_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_129_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_133_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_137_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_141_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_145_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_149_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_153_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_157_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_161_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_165_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_169_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_173_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_177_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_21_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_25_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_29_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_33_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_37_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_41_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_45_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_49_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_53_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_57_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_61_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_65_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_69_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_73_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_77_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_81_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_85_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_89_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_93_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_3/mask_97_3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_101_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_105_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_109_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_113_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_117_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_121_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_125_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_129_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_133_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_137_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_141_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_145_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_149_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_153_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_157_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_161_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_165_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_169_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_173_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_177_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_21_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_25_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_29_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_33_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_37_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_41_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_45_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_49_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_53_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_57_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_61_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_65_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_69_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_73_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_77_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_81_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_85_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_89_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_93_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_4/mask_97_4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_101_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_105_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_109_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_113_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_117_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_121_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_125_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_129_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_133_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_137_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_141_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_145_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_149_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_153_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_157_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_161_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_165_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_169_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_173_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_177_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_21_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_25_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_29_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_33_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_37_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_41_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_45_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_49_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_53_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_57_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_61_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_65_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_69_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_73_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_77_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_81_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_85_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_89_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_93_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_5/mask_97_5.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_101_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_105_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_109_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_113_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_117_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_121_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_125_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_129_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_133_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_137_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_141_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_145_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_149_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_153_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_157_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_161_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_165_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_169_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_173_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_177_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_21_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_25_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_29_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_33_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_37_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_41_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_45_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_49_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_53_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_57_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_61_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_65_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_69_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_73_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_77_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_81_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_85_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_89_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_93_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_6/mask_97_6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_101_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_105_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_109_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_113_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_117_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_121_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_125_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_129_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_133_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_137_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_141_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_145_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_149_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_153_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_157_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_161_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_165_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_169_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_173_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_177_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_21_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_25_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_29_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_33_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_37_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_41_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_45_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_49_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_53_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_57_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_61_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_65_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_69_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_73_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_77_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_81_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_85_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_89_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_93_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/cache/mask_7/mask_97_7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/new.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/phpqrcode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/qrbitstream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/qrconfig.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/qrconst.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/qrencode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/qrimage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/qrinput.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/qrlib.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/qrmask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/qrrscode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/qrspec.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/qrsplit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/qrtools.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/temp/test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/temp/test8b741682e64a5f8a593491a929442dd1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/tools/merge.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/tools/merge.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/tools/merge.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/tools/merged_config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libraries/tools/merged_header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/dompdf.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/excel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_26_121714_create_directions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_30_084320_create_gender_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_30_160021_create_user_profile_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_13_174446_create_book_types_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_13_180516_create_book_languages_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_13_180722_create_book_texts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_06_055111_create_book_text_type.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_06_212229_create_books_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_06_213317_create_book_inventars_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_06_213730_create_book_inventar_lists_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_17_173750_add_isbn_issn_to_books_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/adminlte.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/adminlte.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/adminlte.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/adminlte.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.components.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.components.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.components.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.components.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.core.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.core.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.core.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.core.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.extra-components.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.extra-components.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.extra-components.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.extra-components.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.pages.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.pages.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.pages.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.pages.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.plugins.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.plugins.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.plugins.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/alt/adminlte.plugins.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/avatar2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/avatar3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/avatar4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/avatar5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/boxed-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/boxed-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/credit/american-express.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/credit/cirrus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/credit/mastercard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/credit/paypal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/credit/paypal2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/credit/visa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/default-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/photo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/photo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/photo3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/photo4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/prod-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/prod-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/prod-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/prod-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/prod-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/user4-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/user5-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/user6-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/user7-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/adminlte.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/adminlte.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/adminlte.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/adminlte.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/bootstrap-switch.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/jquery.inputmask.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/pages/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/pages/dashboard2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/pages/dashboard3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/print.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/scirpt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/select2.full.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/qrcode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/css/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/css/brands.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/css/brands.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/css/fontawesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/css/fontawesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/css/regular.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/css/regular.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/css/solid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/css/solid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/css/svg-with-js.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/css/svg-with-js.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/css/v4-shims.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/css/v4-shims.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fontawesome-free/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/icheck-bootstrap/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/icheck-bootstrap/icheck-bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/icheck-bootstrap/icheck-bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/jquery.slim.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2-bootstrap4-theme/select2-bootstrap4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/css/select2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/css/select2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/build.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/dsb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/hsb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/hy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/ne.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/ps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/sr-Cyrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/tk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/i18n/zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/select2.full.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/select2.full.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/select2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/js/select2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/qr_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/qrcode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/testreal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qrcode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/uz/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/uz/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/uz/passwords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/uz/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-inventar-list/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-inventar-list/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-inventar-list/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-inventar-list/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-inventar-list/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-inventar/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-inventar/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-inventar/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-inventar/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-inventar/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-language/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-language/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-language/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-language/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-language/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-text-type/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-text-type/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-text-type/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-text-type/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-text-type/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-text/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-text/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-text/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-text/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-text/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-type/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-type/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-type/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-type/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book-type/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book/inventars.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/book/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/direction/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/direction/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/direction/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/direction/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/direction/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/gender/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/gender/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/gender/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/gender/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/gender/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/admin/books-component.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/admin/books/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/admin/books/view.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/admin/qrcode-component.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pdf/document.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/qr_code.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/site/cat.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/site/parent.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/site/sub.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user-profile/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user-profile/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user-profile/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user-profile/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user-profile/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user-type/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user-type/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user-type/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user-type/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user-type/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/export.model.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/export.plain.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/export.query-model.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/export.query.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/import.collection.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/import.model.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laralib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laralib.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RoleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Admin/Users/ListUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Admin/Users/ListUsers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Faculty.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Faculty.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/BladeComponentServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/BladeComponentServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/UserController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/CreateAdminUserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/CreateAdminUserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dist/img/AdminLTELogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/img/AdminLTELogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dist/img/user1-128x128.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/img/user1-128x128.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dist/img/user2-160x160.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/img/user2-160x160.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dist/img/user3-128x128.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/img/user3-128x128.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dist/img/user8-128x128.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/img/user8-128x128.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/uz/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/uz/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/loading-indicator.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/loading-indicator.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/admin/faculties-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/admin/faculties-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/admin/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/admin/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/admin/users/list-users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/admin/users/list-users.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/roles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/roles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,40 +798,168 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="54" column="69" selection-start-line="53" selection-start-column="69" selection-end-line="54" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MicroParentCategory.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/MicroParentCategory.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="MorganismController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MorganismController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2312">
+              <caret line="146" column="42" selection-start-line="146" selection-start-column="42" selection-end-line="146" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Morganism.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/Morganism.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2958">
+              <caret line="177" column="20" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="65" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/sidebar.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3434">
+              <caret line="202" column="29" selection-start-line="128" selection-start-column="16" selection-end-line="202" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>pathogenicity</find>
+      <find>micro_parent_category_id</find>
+      <find>autho</find>
+      <find>conditionPreservation</find>
+      <find>growthPhLt7</find>
+      <find>growthHigher</find>
+      <find>biotechnologicalFeature</find>
+      <find>$microCategories</find>
+      <find>microParentCategories</find>
+      <find>$morganisms</find>
+      <find>microCategories</find>
+      <find>morganisms</find>
+      <find>strain_label</find>
+      <find>role</find>
+      <find>$books</find>
+      <find>$book</find>
+      <find>title</find>
+      <find>store</find>
+      <find>BookInventarList</find>
+      <find>from</find>
+      <find>book</find>
+      <find>creator</find>
+      <find>creater</find>
+      <find>orderModal</find>
+      <find>pdf</find>
+      <find>roles</find>
+      <find>biotechnological_features_id</find>
+      <find>$microParentCat</find>
+      <find>role_id</find>
+      <find>mysql</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/app/Models/MorganismsTranslation.php" />
+        <option value="$PROJECT_DIR$/app/Models/MorganismTranslation.php" />
+        <option value="$PROJECT_DIR$/resources/views/morganism/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/morganism/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/morganism/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/MicroParentCategory.php" />
+        <option value="$PROJECT_DIR$/resources/views/site/parent.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/RoleController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2021_04_30_160021_create_user_profile_table.php" />
+        <option value="$PROJECT_DIR$/resources/lang/uz/messages.php" />
+        <option value="$PROJECT_DIR$/resources/views/book-type/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/book-type/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/book-type/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/book-text/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/book-text/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/book-text-type/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/book-text-type/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/book/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/book/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/gender/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/gender/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/gender/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/users/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/users/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/faculty/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/faculty/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/faculty/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/direction/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/direction/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/direction/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/BookInventarList.php" />
+        <option value="$PROJECT_DIR$/app/Models/Book.php" />
+        <option value="$PROJECT_DIR$/resources/views/book/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/BookController.php" />
+        <option value="$PROJECT_DIR$/resources/views/book/inventars.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pdf/inventarall.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2021_07_28_094046_add_roles_to_morganisms_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/morganism/create.blade.php" />
+        <option value="$PROJECT_DIR$/public/dist/js/scirpt.js" />
         <option value="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/morganism/form.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MorganismController.php" />
+        <option value="$PROJECT_DIR$/app/Models/Morganism.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/resources/views/site/cat.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/partials/footer.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/app/Providers/BladeComponentServiceProvider.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/verify.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/users/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/products/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/roles/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/roles/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/roles/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/roles/show.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/livewire/admin/users/list-users.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2021_04_26_085624_create_branches_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2021_04_26_101314_create_faculties_table.php" />
-        <option value="$PROJECT_DIR$/resources/js/bootstrap.js" />
-        <option value="$PROJECT_DIR$/app/Models/Faculty.php" />
-        <option value="$PROJECT_DIR$/database/seeders/FacultySeeder.php" />
-        <option value="$PROJECT_DIR$/resources/views/livewire/faculties-component.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Livewire/Admin/FacultiesComponent.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/partials/sidebar.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/livewire/admin/faculties-component.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/config/database.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
       </list>
     </option>
   </component>
@@ -181,6 +1094,38 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
       <path value="$PROJECT_DIR$/vendor/ibex/crud-generator" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-elfinder" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/elfinder-flysystem-driver" />
+      <path value="$PROJECT_DIR$/vendor/league/fractal" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-editor" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-fractal" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-buttons" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-html" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
+      <path value="$PROJECT_DIR$/vendor/astrotomic/laravel-translatable" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/simplesoftwareio/simple-qrcode" />
+      <path value="$PROJECT_DIR$/vendor/dasprid/enum" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/cviebrock/eloquent-sluggable" />
+      <path value="$PROJECT_DIR$/vendor/studio-42/elfinder" />
+      <path value="$PROJECT_DIR$/vendor/cocur/slugify" />
+      <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
+      <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
+      <path value="$PROJECT_DIR$/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -189,6 +1134,7 @@
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -204,46 +1150,12 @@
             <path>
               <item name="laralib" type="b2602c69:ProjectViewProjectNode" />
               <item name="laralib" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laralib" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laralib" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laralib" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laralib" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Livewire" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laralib" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laralib" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Livewire" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="laralib" type="b2602c69:ProjectViewProjectNode" />
               <item name="laralib" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laralib" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laralib" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laralib" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laralib" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-              <item name="en" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="laralib" type="b2602c69:ProjectViewProjectNode" />
@@ -271,12 +1183,7 @@
               <item name="laralib" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="livewire" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laralib" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laralib" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -290,9 +1197,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dell\Documents\applications\laravel\laralib\resources\views\livewire\admin\users" />
+      <recent name="C:\Users\dell\Documents\applications\laravel\laralib\resources\views\livewire" />
       <recent name="C:\Users\dell\Documents\applications\laravel\laralib\resources\views\livewire\admin" />
       <recent name="C:\Users\dell\Documents\applications\laravel\laralib\app\Http\Livewire\Admin" />
     </key>
@@ -334,11 +1244,54 @@
       <workItem from="1619367196641" duration="49000" />
       <workItem from="1619370925588" duration="610000" />
       <workItem from="1619422237704" duration="6628000" />
+      <workItem from="1619435858906" duration="3689000" />
+      <workItem from="1619457054659" duration="3262000" />
+      <workItem from="1619526141770" duration="442000" />
+      <workItem from="1619548991030" duration="4384000" />
+      <workItem from="1619588380499" duration="468000" />
+      <workItem from="1619595445992" duration="1371000" />
+      <workItem from="1619678790357" duration="588000" />
+      <workItem from="1619679950390" duration="10244000" />
+      <workItem from="1619692976576" duration="6860000" />
+      <workItem from="1619712207108" duration="2506000" />
+      <workItem from="1619763214093" duration="392000" />
+      <workItem from="1619769790610" duration="3015000" />
+      <workItem from="1619781696175" duration="2201000" />
+      <workItem from="1619784408365" duration="1330000" />
+      <workItem from="1619796706783" duration="39000" />
+      <workItem from="1619798059922" duration="2990000" />
+      <workItem from="1619886475646" duration="856000" />
+      <workItem from="1620125788065" duration="5378000" />
+      <workItem from="1620148876274" duration="737000" />
+      <workItem from="1620195784378" duration="42000" />
+      <workItem from="1625491169603" duration="1220000" />
+      <workItem from="1625497724913" duration="2698000" />
+      <workItem from="1625550317035" duration="4882000" />
+      <workItem from="1625644855999" duration="590000" />
+      <workItem from="1625681516535" duration="12991000" />
+      <workItem from="1625815452856" duration="6056000" />
+      <workItem from="1626171725816" duration="923000" />
+      <workItem from="1626363509974" duration="1511000" />
+      <workItem from="1626582720477" duration="16878000" />
+      <workItem from="1627046294463" duration="2284000" />
+      <workItem from="1627131355076" duration="5133000" />
+      <workItem from="1627194638540" duration="14108000" />
+      <workItem from="1627314196901" duration="19936000" />
+      <workItem from="1627464310766" duration="5658000" />
+      <workItem from="1627539519922" duration="2932000" />
+      <workItem from="1627549706370" duration="3564000" />
+      <workItem from="1627574252158" duration="633000" />
+      <workItem from="1627651403955" duration="32000" />
+      <workItem from="1627661901774" duration="1557000" />
+      <workItem from="1628031304088" duration="4265000" />
+      <workItem from="1628146245736" duration="4359000" />
+      <workItem from="1628191676413" duration="3720000" />
+      <workItem from="1628274179673" duration="1182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14376000" />
+    <option name="totallyTimeSpent" value="182282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -347,11 +1300,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50075644" side_tool="true" weight="0.32843137" />
       <window_info anchor="bottom" id="Migrations" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32843137" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36764705" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49924356" visible="true" weight="0.21732026" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49924356" weight="0.32026145" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27155825" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -363,8 +1316,31 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26399395" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3267974" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Migrations" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924356" visible="true" weight="0.32026145" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.32843137" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -373,270 +1349,314 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/sidebar.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/book-text/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
+        <state relative-caret-position="187">
+          <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/livewire/admin/users/list-users.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/book-text/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/book-text-type/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        <state relative-caret-position="187">
+          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/sidebar.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/book-text-type/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
+        <state relative-caret-position="187">
+          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/book-text-type/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/book/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/book/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/gender/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/gender/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/gender/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/users/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/users/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/users/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user-type/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user-type/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user-type/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/conditions-growth/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/conditions-growth/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/conditions-growth/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/faculty/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/faculty/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/faculty/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/direction/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/direction/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/direction/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/BookInventarList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="63" column="32" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Book.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2431">
+          <caret line="144" column="26" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/book/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="86" column="59" selection-start-line="86" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BookController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/book/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5865">
+          <caret line="345" column="44" selection-start-line="310" selection-start-column="28" selection-end-line="345" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/book/inventars.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="200" column="32" selection-start-line="200" selection-start-column="32" selection-end-line="200" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pdf/inventarall.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="60" column="76" selection-start-line="60" selection-start-column="76" selection-end-line="60" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/morganism/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2021_07_28_094046_add_roles_to_morganisms_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dist/js/scirpt.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="106" column="64" selection-start-line="106" selection-start-column="64" selection-end-line="106" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RoleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/roles/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/morganism/form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3179">
+          <caret line="187" column="72" selection-start-line="187" selection-start-column="65" selection-end-line="187" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/morganism/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/MicroParentCategory.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MorganismController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2312">
+          <caret line="146" column="42" selection-start-line="146" selection-start-column="42" selection-end-line="146" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Morganism.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2958">
+          <caret line="177" column="20" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="496" selection-start-line="496" selection-end-line="496" />
+        <state relative-caret-position="161">
+          <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/BladeComponentServiceProvider.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/site/cat.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        <state relative-caret-position="153">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="15" selection-start-line="15" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="85" column="2" selection-start-line="85" selection-start-column="2" selection-end-line="85" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/verify.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="48" column="2" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="50" column="2" selection-start-line="50" selection-start-column="2" selection-end-line="50" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/products/index.blade.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductController.php" />
-    <entry file="file://$PROJECT_DIR$/app/Models/Product.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2021_04_24_104731_create_products_table.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/roles/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret selection-end-line="1" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/roles/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/roles/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/roles/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/users/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2021_04_24_090614_create_permission_tables.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2021_04_26_085624_create_branches_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="18" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeders/PermissionTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="33" column="10" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="33" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeders/CreateAdminUserSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2021_04_26_101314_create_faculties_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Faculty.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/livewire/admin/users/list-users.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="84" column="26" selection-start-line="20" selection-end-line="84" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeders/FacultySeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="18" column="94" selection-start-line="18" selection-start-column="82" selection-end-line="18" selection-end-column="94" />
-          <folding>
-            <element signature="e#36#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Livewire/Admin/Users/ListUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="53" selection-end-line="16" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Livewire/Admin/FacultiesComponent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="e#43#66#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/livewire/admin/faculties-component.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+        <state relative-caret-position="102">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
-          <folding>
-            <element signature="e#7#50#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="476">
+          <caret line="54" column="69" selection-start-line="53" selection-start-column="69" selection-end-line="54" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3434">
+          <caret line="202" column="29" selection-start-line="128" selection-start-column="16" selection-end-line="202" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="65" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
         </state>
       </provider>
     </entry>
