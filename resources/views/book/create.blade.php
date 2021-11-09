@@ -40,7 +40,7 @@
 
                     <div class="card card-default">
                         <div class="card-body">
-                            <form method="POST" action="{{ route('books.store') }}"  role="form" enctype="multipart/form-data">
+                            <form method="POST" action="{{ route('books.store') }}"  role="form" enctype="multipart/form-data" id="book_form">
                                 @csrf
                                 @include('book.form')
                             </form>
@@ -51,3 +51,5 @@
         </div>
     </section>
 </x-admin-layout>
+
+ 

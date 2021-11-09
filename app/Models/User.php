@@ -11,8 +11,8 @@ use Spatie\Permission\Traits\HasRoles;
 class User extends Authenticatable
 {
     use HasFactory, Notifiable, HasRoles;
-    const STATUS_EMPLOYEE='E';
-    const STATUS_READER='R';
+    const STATUS_EMPLOYEE = 'E';
+    const STATUS_READER = 'R';
     /**
      * The attributes that are mass assignable.
      *
@@ -43,19 +43,21 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public static function GetKlassCodeFromRole($role=null){
-        if ($role=="SuperAdmin" | $role=="Admin"| $role=="Manager" ){
+    public static function GetKlassCodeFromRole($role = null)
+    {
+        if ($role == "SuperAdmin" | $role == "Admin" | $role == "Manager") {
             return self::STATUS_EMPLOYEE;
-        }elseif ($role=="Reader" ){
+        } elseif ($role == "Reader") {
             return self::STATUS_READER;
-        }else{
+        } else {
             return null;
         }
     }
-    public static function GetQRNumber(){
-        return str_pad(User::all()->count()+1, 4, '0', STR_PAD_LEFT);
+    public static function GetQRNumber()
+    {
+        return str_pad(User::all()->count() + 1, 4, '0', STR_PAD_LEFT);
     }
-    
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasOne
      */
@@ -63,5 +65,4 @@ class User extends Authenticatable
     {
         return $this->hasOne('App\Models\UserProfile', 'user_id', 'id');
     }
-    
 }

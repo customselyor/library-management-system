@@ -13,7 +13,7 @@
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
     </div>
-     <section class="content">
+    <section class="content">
         <div class="container-fluid">
             <!-- Small boxes (Stat box) -->
             <div class="row">
@@ -21,13 +21,14 @@
                     <!-- small box -->
                     <div class="small-box bg-info">
                         <div class="inner">
-                            <h3>{{$books}}</h3>
-                            <p>{{__('messages.books')}} </p>
+                            <h3>{{ $books }}</h3>
+                            <p>{{ __('messages.books') }} </p>
                         </div>
                         <div class="icon">
                             <i class="nav-icon fas fa-book"></i>
                         </div>
-                        <a href="books" class="small-box-footer">{{__('messages.more_info')}} <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="/admin/books" class="small-box-footer">{{ __('messages.more_info') }} <i
+                                class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <!-- ./col -->
@@ -35,13 +36,14 @@
                     <!-- small box -->
                     <div class="small-box bg-success">
                         <div class="inner">
-                            <h3>{{$book_copies}}</h3>
-                            <p>{{__('messages.copies')}} </p>
+                            <h3>{{ $book_copies }}</h3>
+                            <p>{{ __('messages.copies') }} </p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-stats-bars"></i>
                         </div>
-                        <a href="books/inventars" class="small-box-footer">{{__('messages.more_info')}} <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="/admin/books/inventars" class="small-box-footer">{{ __('messages.more_info') }} <i
+                                class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <!-- ./col -->
@@ -49,13 +51,14 @@
                     <!-- small box -->
                     <div class="small-box bg-warning">
                         <div class="inner">
-                            <h3>{{$users}}</h3>
-                            <p>{{__('messages.users')}}</p>
+                            <h3>{{ $users }}</h3>
+                            <p>{{ __('messages.users') }}</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-person-add"></i>
                         </div>
-                        <a href="/admin/users" class="small-box-footer">{{__('messages.more_info')}} <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="/admin/users" class="small-box-footer">{{ __('messages.more_info') }} <i
+                                class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <!-- ./col -->
@@ -75,14 +78,13 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-{{--                            {{ __('You are logged in!') }}--}}
-                            @php
-                                //print_r(Auth::user()->getRoleNames()[0]);
-                            @endphp
+                        {{-- {{ __('You are logged in!') }} --}}
+                        @php
+                            //print_r(Auth::user()->getRoleNames()[0]);
+                        @endphp
                     </div>
                 </div>
             </div>
         </div>
     </div>
- </x-admin-layout>
-
+</x-admin-layout>

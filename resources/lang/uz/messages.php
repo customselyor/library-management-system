@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: dell
@@ -80,7 +81,7 @@ return [
     'exists_electron_format' => 'Elektron formatda bor',
     'exists_in_library' => 'Kutubxonada bor',
     'roles' => 'Rollar',
-//    'micro_parent_categories' => 'Micro Parent Categories',
+    //    'micro_parent_categories' => 'Micro Parent Categories',
     'remember_me' => 'Eslab qolish',
     'login' => 'Kirish',
     'register' => 'Ro\'yhatdan o\'tish',
@@ -93,8 +94,13 @@ return [
     'biotechnological_features' => 'Biotexnologik xususiyatlar',
     'strain_label' => 'Kuchlanish yorlig\'i',
     'enzymatic_activity_extreme_conditions_protein' => 'Ekstremal sharoitda fermentativ faollik, u/mg protein',
-    'from'=>'dan',
-    'to'=>'gacha',
-    'is_deleted'=>'O\'chirilganmi',
-    'inventars'=>'Inventar',
+    'from' => 'dan',
+    'to' => 'gacha',
+    'is_deleted' => 'O\'chirilganmi',
+    'inventars' => 'Inventar',
+    'faculty' => 'Fakultet',
+    'address' => 'Manzil',
+    'oldi_berdi' => 'Kitoblarni olish va berish',
+    'for_how_many_days' => 'Nechchi kunga',
+    'olber' => 'Qarzdorlar',
 ];
